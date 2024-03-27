@@ -1,2 +1,3 @@
-# debian-machine-label
+# Debian machine label
 Debian machine printable label
+

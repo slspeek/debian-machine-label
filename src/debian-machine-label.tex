@@ -1,0 +1,25 @@
+%% This file is encoded in utf-8
+%%
+\documentclass{article}
+% \usepackage{blindtext}
+\usepackage{graphicx}
+% \usepackage{multicol}
+% \usepackage{float}
+\usepackage{wrapfig}
+\usepackage[paperheight=44mm,paperwidth=89mm,margin=2mm,heightrounded]{geometry}
+\begin{document}
+\input{spec}
+
+\begin{wrapfigure}{r}{30mm}
+	  \includegraphics[width=30mm]{qr-hw-probe.png}
+\end{wrapfigure}
+
+\begin{tabular}{ l l }
+	Debian & \debianversion \\
+	CPU & \cpumodel \\
+	\disktype & \disksize \\
+	\memtype & \memsize \\
+	Boot key & \bootmenukey \\
+\end{tabular}  
+
+\end{document}
