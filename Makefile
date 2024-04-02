@@ -1,3 +1,4 @@
+# SHELL=/bin/bash
 BUILD=build
 MAIN_NAME=debian-machine-label
 LATEX_IMAGE=leplusorg/latex:sha-4a17317
@@ -16,7 +17,7 @@ prepare:
 	mkdir -p $(BUILD)
 
 generate_pdf: prepare
-	BUILD=$(BUILD) PASSWORD=tux BOOTMENUKEY=F9 ./spec.sh
+	BUILD=$(BUILD) PASSWORD=${PASSWORD} BOOTMENUKEY=${BOOTMENUKEY} ./spec.sh
 	$(PDFLATEX_CMD)
 
 test: prepare

@@ -6,23 +6,26 @@
 % \usepackage{multicol}
 % \usepackage{float}
 \usepackage{wrapfig}
-\usepackage[paperheight=44mm,paperwidth=89mm,margin=2mm]{geometry}
+\usepackage[paperheight=44mm,paperwidth=89mm,top=4mm, left=7mm, right=7mm, bottom=4mm]{geometry}
 \input{spec}
 \begin{document}
 
-\begin{wrapfigure}{r}{30mm}
-	  \includegraphics[width=30mm]{qr-hw-probe.png}
+\begin{wrapfigure}{r}{26mm}
+	  \includegraphics[width=26mm]{qr-hw-probe.png}
 \end{wrapfigure}
 
-% \small
-\noindent{}\begin{tabular}{ l | l }
+\footnotesize
+\noindent{}\begin{tabular}{ p{13mm} | p{30mm} }
 	Debian & \debianversion \\
-	CPU & \cpumodel \\
-	\disktype & \disksize \\
-	\memtype & \memsize \\
-	Boot key & \bootmenukey \\
+	CPU &  \cpumodel \\
+	\disktype &  \disksize \\
+	\memtype &  \memsize \\
+	Preseed & \preseedprofile \\
+	Hash & \preseedhash \\
+	Birth & \birth \\
 	Username & \username \\
 	Password & \password \\
+	Boot key &  \bootmenukey \\
 \end{tabular}  
 
 \end{document}

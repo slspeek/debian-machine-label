@@ -2,10 +2,11 @@
 Debian machine printable label
 
 ## Usage
+Use together with [https://slspeek.github.io/debian](https://slspeek.github.io/debian)
 
-Run
+Run for example 
 ```
-make generate_pdf
+make PASSWORD=tux BOOTMENUKEY=F9 generate_pdf
 ```
 
 on your host.
